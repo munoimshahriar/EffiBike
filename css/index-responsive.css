@@ -9,6 +9,18 @@
    }
 }
 
+/*for the main section cards */
+@media (max-width: 768px) {
+  .productCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+/*end here for the main section cards */
 
 @media screen and (max-width: 900px) {
    .coverDiv .mainHeader .navItems{
