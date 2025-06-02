@@ -256,7 +256,7 @@ p{
    content: " ";
    width: 0%;
    height: 5%;
-   background-color: red;
+   background-color: rgb(78, 217, 120);
    position: absolute;
    bottom: 0;
    right: 0%;
@@ -852,3 +852,25 @@ p{
    color: blue;
 }
 /* Div Seven ends ========================== */
+
+
+/* footer */
+.footer {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #8a948a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer a:hover {
+  
+  color: #66ff99;
+}
