@@ -888,3 +888,45 @@ p{
   
   color: #66ff99;
 }
+
+
+
+  .mapCard {
+    width: 45%;
+    margin: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .mapCard h3 {
+    font-size: 1.3em;
+    margin-bottom: 6px;
+    color: #2e2e2e;
+  }
+
+  .mapCard p {
+    font-size: 0.95em;
+    margin-bottom: 12px;
+    color: #3a2c2c;
+  }
+
+  .mapBtn {
+    margin-top: 15px;
+    background-color: #44864b;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  .mapBtn:hover {
+    background-color: #a30000;
+  }
