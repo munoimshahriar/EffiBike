@@ -22,14 +22,11 @@
 /*for main section cards*/
 .productCards {
   display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-wrap: nowrap;
-  margin: 40px auto;
-  padding: 20px;
+  flex-wrap: wrap; /* ✅ Allow cards to wrap */
+  justify-content: space-between;
   gap: 20px;
-  max-width: 1200px;
-  overflow-x: auto;
+  max-width: 1000px;
+  margin: 40px auto;
 }
 
 .card {
@@ -51,6 +48,11 @@
   display: inline-block;
 }
 
+.cardLink:nth-child(4) {
+  width: 90%;
+  max-width: 600px;
+  margin-top: 30px;
+}
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 9px 15px rgba(224, 251, 224, 0.35);
@@ -89,14 +91,26 @@
 }
 
 .price {
-  display: inline-block;
+  display: inline-block; /* Makes the price behave like a box for styling */
   margin-top: 12px;
-  font-size: 1.2em;
+  font-size: 1.2em;       /* Slightly bigger text */
   font-weight: bold;
-  color: #0d9f4a;
+  color: #999;            /* Default gray color for price block */
 }
-/*the cards ends here for the main section*/
 
+.price del {
+  color: #999;            /* Gray color for old price */
+  margin-right: 8px;      /* Spacing between original and offer price */
+  text-decoration: line-through; /* Crosses out the old price */
+  font-weight: normal;
+}
+
+.offerPrice {
+  color: #0d9f4a;         /* Green — common color for "on sale" prices */
+  font-weight: bold;
+}
+
+/*the cards ends here for the main section*/
 
 
 :root{
